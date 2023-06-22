@@ -5,7 +5,7 @@ import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 
-
+  
 export default function Feed({username}) {
   const [posts, setPosts] = useState([]);
   const {user} = useContext(AuthContext);
